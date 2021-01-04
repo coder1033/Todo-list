@@ -10,10 +10,10 @@ if(!localStorage.getItem('initiate')){
 
     
 
-    let default_task_1 = {description:'Sample task description 1', priority:'mid-priority', date:'date'};
-    let default_task_2 = {description:'Sample task description 2', priority:'completed', date:'date'};
-    let default_task_3 = {description:'Sample task description 3', priority:'high-priority', date:'date'};
-    let default_task_4 = {description:'Sample task description 4', priority:'low-priority', date:'date'};
+    let default_task_1 = {description:'Sample task description 1', priority:'mid-priority', date:new Date()};
+    let default_task_2 = {description:'Sample task description 2', priority:'completed', date:new Date()};
+    let default_task_3 = {description:'Sample task description 3', priority:'high-priority', date:new Date()};
+    let default_task_4 = {description:'Sample task description 4', priority:'low-priority', date:new Date()};
     default_todo.tasks.push(default_task_1, default_task_2, default_task_3, default_task_4);
     
     console.log([default_task_1, default_task_2, default_task_3, default_task_4]);
