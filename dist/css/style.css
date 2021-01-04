@@ -1,0 +1,245 @@
+body{
+    background-color: #f4f4f4;
+    margin:0;
+    font: normal 16px Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+}
+button{
+    cursor: pointer;
+}
+
+#main-header{
+    overflow:hidden;
+    position: fixed;
+    background-color: #000;
+    color: #f4f4f4;
+    font-size: 22px;
+    top:0;
+    width:100%;
+}
+#main-header .container{
+    margin-right:5%;
+    margin-left: 8%;
+}
+#main-header li{
+    list-style-type: none;
+    float:left;
+}
+#main-header li:last-child{
+    float:right;
+}
+
+
+#navbar{
+    position: fixed;
+    overflow: scroll;
+    overflow-x: hidden;
+    right:0;
+    top:109px;
+    height:50%;
+    width:15%;
+    background-color: #000;
+    color: #f4f4f4;
+    padding:2rem;
+    padding-top:0.8rem;
+
+}
+#navbar::-webkit-scrollbar {
+    width: 0.3em;
+    background-color: #f4f4f4;
+}
+#navbar::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 10px;
+}
+
+#navbar ul{
+    list-style: none;
+    padding:0;
+    width:100%;
+}
+
+#navbar li{
+    border-bottom: 1px dotted #f4f4f4;
+}
+#navbar button{
+    background-color: black;
+    border: none;
+    border-radius:10px;
+    color: #f4f4f4;
+    font-size: 18px;
+    padding: 0.5rem;
+    margin:0.5rem 0rem;
+    width:90%;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#navbar li:first-child{
+    border: 1.5px dotted #f4f4f4;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+#navbar li:first-child button{
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+}
+#navbar button:hover{
+    background-color:#f4f4f4;
+    color: #000;
+}
+
+#showcase{
+    margin: 170px 35% 170px 10%;
+    color: #000;
+}
+
+#showcase h2{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 7px 20px;
+    border-bottom: 2px solid;
+}
+#showcase h2 small{
+    font-size:15px;
+    line-height: 0;
+}
+#showcase small{
+    color: #808080;
+}
+#priority-color{
+    position: fixed;
+    right:0;
+    top:465px;
+    height:auto;
+    width:20%;
+    background-color: #f4f4f4;
+    color: #000;
+}
+#priority-color ul{
+    list-style: none;
+    padding: 0;
+    padding-right:4px;
+    padding-top:0;
+    margin:0;
+}
+#addTask-deleteTodo{
+    position: fixed;
+    top:300px;
+    padding:5px;
+    width:5%;
+    left:1.5%;
+}
+#addTask-deleteTodo button{
+    border: 1.5px solid #000;
+    background-color: #f4f4f4;
+    color:#000;
+    font-weight: bold;
+    border-radius: 6px;
+    padding:6px;
+    margin-bottom:5px;
+}
+#addTask-deleteTodo button:hover{
+    background-color: #000;
+    color: #f4f4f4;
+}
+#show-form{
+    position: fixed;
+    background-color: #ccc;
+    padding: 20px;
+    width: 40%;
+    top: 150px;
+    left:20%;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-weight: 900;
+}
+#show-form div{
+    padding: 10px;
+    margin: 10px;
+}
+#show-form label{
+    font-size: 20px;
+    font-weight: 500;
+}
+#show-form input[type=text]{
+    width:100%;
+    border: none;
+    border-bottom: 1.5px solid #000;
+    border-radius: 2px;
+    padding: 8px;
+    background-color: #ccc;
+}
+#show-form input[type=submit], #show-form button[type=button]{
+    background-color: #f4f4f4;
+    border: 1px solid;
+    border-radius: 5px;
+    float:left;
+    cursor: pointer;
+    margin: 10px;
+    padding:5px 10px;
+}
+#show-form button[type=button]{
+    float: right;
+}
+#show-form input[type=submit]:hover{
+    background-color: maroon;
+    color: #f4f4f4;
+}
+#show-form button[type=button]:hover{
+    background-color: #000;
+    color: #f4f4f4;
+}
+#show-form input[type=radio]:hover{
+    cursor: pointer;
+}
+.high-priority {
+    background-color: #ff9999;
+    padding: 20px;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 30px;
+}
+.mid-priority {
+    background-color: #ADD8E6;
+    padding: 20px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    margin: 30px;
+}
+.low-priority {
+    background-color: #90EE90;
+    padding: 20px;
+    border: 2px solid green;
+    border-radius: 10px;
+    margin: 30px;
+}
+.completed {
+    background-color: #D3D3D3;
+    padding: 20px;
+    border: 2px solid #808080;
+    border-radius: 10px;
+    margin: 30px;
+}
+.edit-delete-button{
+    background-color: #f4f4f4;
+    padding: 5px;
+    margin: 0px 5px;
+    border: 1.5px solid;
+    border-radius: 8px;
+    float: right;
+}
+.edit-delete-button:hover{
+    background-color: #000;
+    color: #f4f4f4;
+}
+.color-priority{
+    padding:0;
+    margin:0;
+    margin-top:5px;
+    text-align: center;
+}

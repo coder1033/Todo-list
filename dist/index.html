@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Lists</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <ul>
+                <li><h1>ToDo<small>s</small></h1></li>
+                <li><h3>Other ToDo<small>s</small></h3></li>
+            </ul>
+        </div>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><button onclick="manageForm.addTodo()"><b>+</b> Add</button></li>
+            <li><button>Default ToDo</button></li>
+        </ul>
+    </nav>
+    <div id="priority-color">
+        <ul><small>
+            <li class="color-priority high-priority">high-priority</li>
+            <li class="color-priority mid-priority">mid-priority</li>
+            <li class="color-priority low-priority">low-priority</li>
+            <li class="color-priority completed">task completed</li>
+        </small></ul>
+    </div>
+    <div id="addTask-deleteTodo">
+        <button onclick="">Delete ToDo</button>
+        <button onclick="">Add Task</button>
+    </div>
+    <section id="showcase">
+        <div>
+            <h2> Default <small> (default description)</small><button class="edit-delete-button" onclick="">edit</button></h2>
+        </div>
+        <div>
+            <div class="high-priority">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, nulla?
+                <button class="edit-delete-button" onclick="">delete</button>
+                <button class="edit-delete-button" onclick="">edit</button>
+                <div><small>Time Left - 6 days</small></div>
+            </div>
+            <div class="mid-priority">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, nulla?
+                <button class="edit-delete-button" onclick="manageForm.deleteTask()">delete</button>
+                <button class="edit-delete-button" onclick="manageForm.editTask()">edit</button>
+                <div><small>Time Left - 6 days</small></div>
+            </div>
+            <div class="low-priority">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, nulla?
+                <button class="edit-delete-button" onclick="manageForm.deleteTask()">delete</button>
+                <button class="edit-delete-button" onclick="manageForm.editTask()">edit</button>
+                <div><small>Time Left - 6 days</small></div>
+            </div>
+            <div class="completed">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, nulla?
+                <button class="edit-delete-button" onclick="manageForm.deleteTask()">delete</button>
+                <button class="edit-delete-button" onclick="manageForm.editTask()">edit</button>
+                <div><small>Task done</small></div>
+            </div>
+        </div>
+    </section>
+    <div id="insert">
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
